@@ -1,0 +1,52 @@
+.hero-container {
+    margin: 0 auto;
+    max-width: 1400px;
+
+    
+}
+.hero-section {
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    height: calc(100vh - 160px);
+    gap: 40px;
+    padding: 20px 80px;
+    position: relative;
+    background-image: url('/src//assets/banner1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    & h3{
+      text-align: center;
+    }
+
+    & p {
+      text-align: center;
+    }
+
+}
+
+.hero-section-2 {
+    background-color: #1182c7;
+    padding: 40px 80px;
+    color: #f0ecf1;
+
+    & p{
+      line-height: 2;
+      font-size: 1rem;
+      text-align: center;
+
+      & span{
+        color: rgba(188, 188, 188, 0.817);
+        padding: 0 8px;
+        transition: .4s all ease-in-out;
+        &:hover {
+          color: rgb(255, 0, 0);
+        }
+      }
+    }
+   
+
+}

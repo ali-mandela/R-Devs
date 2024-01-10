@@ -1,0 +1,52 @@
+.feature-container {
+    margin: 0 auto;
+    max-width: 1400px;
+
+    .section{
+        padding: 40px 80px;
+        color:rgb(160, 160, 160);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+        & p{
+            line-height: 2;
+        }
+    }
+}
+
+.why-us{
+    display: flex;
+    gap: 40px;
+    margin:40px 0;
+    line-height: 2;
+    & img {
+        width: 30%;
+        height:30%;
+    };
+
+}
+
+.why-us > div{
+ 
+    & p{
+        text-align: start;
+        font-size: 0.75rem;
+        color: gray;
+
+        & b{
+            color: maroon;
+        }
+    }
+}
+/* .why-us> div:nth-child(1){
+    flex: 8;
+    /* background-color: cadetblue; 
+
+}
+.why-us> div:nth-child(2){
+    flex: 4;
+
+} */
