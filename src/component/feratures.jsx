@@ -27,13 +27,12 @@ const Features = () => {
     return (
         <div className='feature-container'>
             <div className='section'>
-                <h3>R-Dev</h3>
-                <p>In a world pulsating with innovation, R-Devs stands tall as your trusted
-                    partner in the realm of digital evolution. We are not just about writing code;
-                    we are about scripting success stories. Our team, led by a blend of seasoned
-                    managers, skilled developers, and creative minds, is on a mission to
-                    revolutionize the way businesses thrive in the digital space.</p>
-                    <h3>Why R-Devs?</h3>
+                <h1>R-Dev</h1>
+                <p>In a world where technology is always changing, R-Devs is here to help you adapt and succeed in the digital world. We're not just a group of programmers; we're experts at helping businesses grow and achieve their goals online. Our team is made up of experienced leaders, talented developers, and creative thinkers who are dedicated to making your business stand out online. We're on a mission to make sure your business thrives in the digital age, and we're here to guide you every step of the way.</p>
+                   
+            </div>
+            <div>
+            <h1>Why R-Devs?</h1>
                     <div className='why-us'>
                         <div >
                         {

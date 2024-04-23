@@ -5,12 +5,18 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
 }
-.container{
+#root{
   margin: 0 auto;
   max-width: 1400px;
   background-color: #f0ecf1;
+}
+.activeLink{
+  border-bottom: 2px solid #1182c7;
+}
+a{
+  text-decoration: none;
 }
 h1{
   font-size: 2rem;
@@ -33,11 +39,10 @@ p{
   
 }
 
-@media (max-width:700px) {
-  *{
+@media (min-width: 500px) and (max-width: 1200px) {
+  * {
     font-size: 14px;
   }
-  
 }
 
 
@@ -89,3 +94,5 @@ p{
     opacity: 0;
   }
 }
+
+ 

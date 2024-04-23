@@ -1,15 +1,22 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Features from './component/feratures'
-import Header from './component/header'
-import Hero from './component/hero'
 
+import HomePage from './pages/HomePage'
+import ContactusPage from './pages/ContactusPage'
+import Header from './component/header'
+import Footer from './component/Footer'
+import NotFound from './pages/NotFound'
 function App() {
 
   return (
-    <>
-    <Header/>
-    <Hero/>
-    <Features/>
+    <><Header/>
+    <Routes>
+      <Route path='/' element={<HomePage/>} />
+      <Route path='/contact-us' element={<ContactusPage/>}/>
+      <Route path='/*' element={<NotFound/>}/>
+    </Routes>
+    <Footer/>
+  
     </>
   )
 }

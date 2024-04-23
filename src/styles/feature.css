@@ -8,8 +8,14 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        height: 50vh;
         gap: 30px;
 
+        & h1{
+            color: #1182C7;
+            text-align: left;
+
+        }
 
         & p{
             line-height: 2;

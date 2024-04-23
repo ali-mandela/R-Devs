@@ -1,0 +1,8 @@
+.container{
+    min-height: calc(100vh -  140px);
+    padding: 10px 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

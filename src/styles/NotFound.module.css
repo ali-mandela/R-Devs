@@ -1,0 +1,28 @@
+.notFoundContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 240px);
+    background-color: #FFFFFF;
+    flex-direction: column;
+}
+
+ 
+
+.notFoundImage {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.backHomeLink {
+    padding: 10px 20px;
+    background-color:  #1182c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.backHomeLink:hover {
+    background-color: #0056b3;
+}

@@ -1,26 +1,20 @@
-import '../styles/header.css'
-import {useState} from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import style from '../styles/layout.module.css'
 
-const Header = () => {
-    const [isMenuOpen,
-        setIsMenuOpen] = useState(false)
-
+const Header = () => { 
+    const location = useLocation();
     return (
-        <div className="container">
-            <div className='header'>
+            <div className={style.header}>
                 <div>
-                    <h1 >R-DEV {isMenuOpen && "p"}</h1>
+                    <Link  to='/'><h1 >R-DEV  </h1></Link>
                     <p><>Reliable, Responsive, Resilient</></p>
                 </div>
-            
-            <div>
-                <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="lds-ripple">
-                    <div></div>
-                    <div></div>
+                <div className={style.links}> 
+                   <p> <Link to='/join-us'  className={location.pathname === '/join-us' ? 'activeLink' : ''} >Join us</Link></p>
+                   <p> <Link to='/contact-us' className={location.pathname === '/contact-us' ?  'activeLink' : ''}>Contact us</Link></p>
                 </div>
-            </div> 
+              
             </div>
-        </div>
     )
 }
 
