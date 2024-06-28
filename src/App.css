@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
   padding: 0;
@@ -9,8 +12,8 @@
 }
 #root{
   margin: 0 auto;
-  max-width: 1400px;
-  background-color: #f0ecf1;
+  max-width: 1400px; 
+  background-color: #dad5d5b3;
 }
 .activeLink{
   border-bottom: 2px solid #1182c7;
