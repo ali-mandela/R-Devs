@@ -3,6 +3,7 @@ import style from '../styles/join.module.css';
 import banner from '../assets/cpage.svg';
 import toast from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import LayoutContainer from '../layouts/LayoutContainer';
 // import { ContactUs } from './ContactUs';
 
 const ContactusPage = () => {
@@ -58,7 +59,8 @@ const ContactusPage = () => {
   };
 
   return (
-    <div className={style.contactContainer}>
+   <LayoutContainer>
+     <div className={style.contactContainer}>
       <h2>Connect With Us for Your Business</h2>
 
       <div className={style.contactContent}>
@@ -129,6 +131,7 @@ const ContactusPage = () => {
       </div>
       {/* <ContactUs /> */}
     </div>
+   </LayoutContainer>
   );
 }
 

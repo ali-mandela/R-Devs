@@ -2,13 +2,24 @@ import style from '../styles/hero.module.css'
 import image from '../assets/banner.svg'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
+import { useRef } from 'react'
 
 const Hero = () => {
+    const myRef = useRef(null);
+
+    console.log(myRef.current);
+    function handleRef(){
+        console.log(`inside the ref H1`);
+        myRef.current.scrollIntoView({
+            behavior: 'smooth', 
+          });
+    }
+
     return (
         <>
           <div className='w-full py-10'>
           <div style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
-                <h1>🚀 Welcome to R-Devs 🚀</h1>
+                <h1 onClick={handleRef} ref={myRef}>🚀 Welcome to R-Devs 🚀</h1>
                 <b>
                     <h4>Your go-to solution for all things tech, making your digital journey
                         seamless and hassle-free.</h4>

@@ -34,7 +34,7 @@ const TheProcess = () => {
           image:p5
         }
       ];
-    console.log(processSteps[0]);
+    // console.log(processSteps[0]);
   return (
     <div className={styles.processContainer}>
         <h2>Streamlined Process to Success</h2>
