@@ -8,8 +8,7 @@ const LayoutContainer = ({children}) => {
         <div>
             {children}
         </div>
-        
-    {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }

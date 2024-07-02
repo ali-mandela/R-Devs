@@ -11,8 +11,7 @@ const Header = () => {
         { id: 1, name: "Home", path: "/" },
         { id: 2, name: "Projects", path: "/projects" },
         { id: 3, name: "About", path: "/about" },
-        { id: 4, name: "Services", path: "/services" },
-        { id: 5, name: "Career", path: "/career" }
+        { id: 4, name: "Services", path: "/services" }, 
     ];
 
     useEffect(() => {
@@ -31,7 +30,7 @@ const Header = () => {
                         <Link
                             key={link.id}
                             to={link.path}
-                            className="hover:underline"
+                            className={(location.pathname === link.path) ? " underline" :"hover:underline"}
                         >
                             {link.name}
                         </Link>
